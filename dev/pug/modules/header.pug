@@ -1,0 +1,29 @@
+header.header
+  .container
+    .row
+      .col-lg-6
+        .header__logo
+          a(href="#")
+            img(src="../static/img/general/logo.png")
+          .header__info
+            p Доставка пасты
+              span Москва
+            p Время доставки
+              span.next от 31 мин
+      .col-lg-6
+        .header__cta
+          button(type='button', name='call').btn_call
+            | Заказать звонок
+          a(href="tel:+6494461709")
+            | 8 800 333-36-62
+      .col-lg-9
+        .header__menu
+          include menu
+      .col-lg-3
+        .header__login
+          a(href="#")
+            | Войти
+          a(href="#")
+            button(type='button', name='cart').btn_cart
+              | Корзина
+          

@@ -1,0 +1,80 @@
+.header {
+  width: 100%;
+  padding-top: 14px;
+  &__logo {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    a {
+      width: 208px;
+      height: 64px;
+      margin-right: 80px;
+    }
+  }
+  &__info {
+    p:first-child {
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 22px;
+      color: #231F20;
+      padding-bottom: 5px;
+      span {
+        color: #FF2E65;
+        margin-left: 5px;
+      }
+    }
+    p:last-child {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 17px;
+      color: #231F20;
+      span.next {
+        margin-left: 15px;
+        position: relative;
+        &::before {
+          content: "";
+          @include size(4px);
+          background-color: #FF2E65;
+          border-radius: 50%;
+          position: absolute;
+          top: 50%;
+          transform: translate(-50%);
+          left: -7px;
+        }
+      }
+    }
+  }
+  &__cta {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a {
+      margin-left: 28px;
+      font-weight: 700;
+      font-size: 26px;
+      line-height: 32px;
+      text-transform: uppercase;
+      color: #FF2E65;
+    }
+  }
+  &__login {
+    width: 100%;
+    min-height: 42px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    a {
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 28px;
+      color: #696F7A;
+      margin-left: 25px;
+    }
+  }
+  &__menu {
+    width: 100%;
+    min-height: 42px;
+  }
+}

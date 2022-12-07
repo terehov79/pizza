@@ -1,0 +1,98 @@
+.welcome 
+  .container
+    .swiper
+      // Additional required wrapper
+      .swiper-wrapper
+        // Slides
+        - for (var i=0; i<4; i++)
+          .swiper-slide
+            img(src="../static/img/content/slide01.png")
+      //- // If we need pagination
+      //- .swiper-pagination
+      // If we need navigation buttons
+      .swiper-btn
+        .swiper-button-prev
+          +icon("arrow")
+        .swiper-button-next
+          +icon("arrow")
+
+.new
+  .container
+    h4 Новинки
+    .row  
+      - for (var i=0; i<4; i++)
+        .col-lg-3.col-sm-6
+          a(href="#")
+            .mini
+              .__img 
+                img(src="../static/img/content/pizza00.png")
+              .__info 
+                p Карбонара
+                span от 120 $
+    
+.all
+  .container
+    - for (var j=0; j<1; j++)
+      h3 Паста
+      .row
+        - for (var i=0; i<4; i++)
+          .col-lg-3.col-md-6
+            .card 
+              .__img 
+                img(src="../static/img/content/pizza01.png")
+              p С креветками и трюфелями
+              p Домашнаяя паста феттуччине, сливочный соус, креветки, трюфельное масло, черный перец, пармезан.350 г
+              .__price
+                span от 600 $
+                button(type='button', name='in-cart').btn_in-cart
+                  | В корзину
+                    
+.stock
+  .container
+    h2 Наши
+      span акции
+    .row
+      .col-lg-6.mb-4
+        .stock__full
+          img(src="../static/img/content/stock.png")
+      .col-lg-6
+        .row
+          .col-lg-6.mb-4
+            .stock__multi
+              img(src="../static/img/content/stock.png")
+          .col-lg-6.mb-4
+            .stock__multi
+              img(src="../static/img/content/stock.png")
+          .col-lg-6.mb-4
+            .stock__multi
+              img(src="../static/img/content/stock.png")
+          .col-lg-6.mb-4
+            .stock__multi
+              img(src="../static/img/content/stock.png")
+    .stock__all 
+      button(type='button', name='stock').btn_stock
+        | Все aкции
+
+.cargo
+  .container
+    h3 Оплата и доставка
+    .row.mb-5
+      .col-lg-3
+        .cargo__block
+          +icon("cargo01")
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      .col-lg-3
+        .cargo__block
+          +icon("cargo02")
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      .col-lg-3
+        .cargo__block
+          +icon("cargo03")
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+      .col-lg-3
+        .cargo__block
+          +icon("cargo04")
+          p Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    .cargo__map
+      iframe(src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d10381.65464169091!2d26.97045511336204!3d49.41999303504109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1670347850573!5m2!1sru!2sua")
+      
