@@ -1,7 +1,9 @@
 .footer {
   width: 100%;
+  padding: 77px 0;
   &__logo {
     width: 100%;
+    padding-bottom: 40px;
   }
   &__info {
     width: 100%;
@@ -12,6 +14,7 @@
       align-items: center;
       li {
         width: 50%;
+        padding-bottom: 20px;
         a {
           font-weight: 700;
           font-size: 16px;
@@ -31,6 +34,7 @@
       align-items: center;
       li {
         width: 50%;
+        padding-top: 10px;
         a {
           font-weight: 600;
           font-size: 16px;
@@ -39,6 +43,90 @@
           opacity: 0.7;
         }
       }
+    }
+  }
+  &__copyright {
+    width: 100%;
+    padding-top: 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    a {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 28px;
+      color: #0E0C0D;
+      opacity: 0.8;
+    }
+    .visa {
+      svg {
+        @include size(36px);
+        margin-left: 10px;
+      }
+    }
+  }
+  &__connect {
+    width: 100%;
+    padding-left: 20px;
+    position: relative;
+    &::after {
+      content: "";
+      @include size(262px, 195px);
+      display: block;
+      position: absolute;
+      bottom: -50px;
+      right: -50px;
+      background-image: url('/static/img/content/plate.png');
+      background-size: contain;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      transform: scale(1.3);
+      z-index: -1;
+    }
+    p {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 17px;
+      text-transform: uppercase;
+      color: #0E0C0D;
+      padding: 36px 0;
+    }
+    span {
+      font-weight: 700;
+      font-size: 13px;
+      line-height: 16px;
+      color: #0E0C0D;
+      opacity: 0.8;
+    }
+    .col-lg-3, .col-lg-6 {
+      padding: 0 5px;
+    }
+  }
+  &__icon {
+    width: 100%;
+    height: 52px;
+    border: 2px solid #E3ECF5;
+    border-radius: 13px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      @include size(30px);
+    }
+  }
+  &__cta {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    a {
+      padding: 30px 0 20px;
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 37px;
+      text-transform: uppercase;
+      color: #FF2E65;
     }
   }
 }

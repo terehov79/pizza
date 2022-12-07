@@ -1,1 +1,39 @@
-<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 176 176" style="enable-background:new 0 0 512 512" xml:space="preserve" class=""><g><g id="Layer_2" data-name="Layer 2"><g id="messenger"><rect id="background" fill="#0084ff" height="176" rx="24" width="176" data-original="#0084ff" class=""></rect><g id="icon"><path d="m143 83.93c0 28.13-24.63 50.93-55 50.93a59.23 59.23 0 0 1 -15.78-2.13l-18.73 10.27v-19.42c-12.49-9.33-20.49-23.58-20.49-39.65 0-28.13 24.63-50.93 55-50.93s55 22.81 55 50.93z" fill="#ffffff" data-original="#ffffff"></path><path d="m123.53 69.67-30.07 31.9-14-14.93-27.33 14.94 30.07-31.91 14.35 14.93z" fill="#2196f3" data-original="#2196f3"></path></g></g></g></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.com/svgjs" width="512" height="512" x="0" y="0" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512" xml:space="preserve"><g>
+<g>
+	<g>
+		<path d="M256,0C114.624,0,0,106.112,0,237.024c0,74.592,37.216,141.12,95.392,184.576V512l87.168-47.84
+			c23.264,6.432,47.904,9.92,73.44,9.92c141.376,0,256-106.112,256-237.024S397.376,0,256,0z M281.44,319.2l-65.184-69.536
+			L89.056,319.2l139.936-148.544l66.784,69.536l125.6-69.536L281.44,319.2z" fill="#000000" data-original="#000000"></path>
+	</g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+<g>
+</g>
+</g></svg>
