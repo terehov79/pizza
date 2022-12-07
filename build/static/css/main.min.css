@@ -327,36 +327,44 @@ textarea {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
-      .footer__info ul li a {
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 28px;
-        color: #0E0C0D;
-        opacity: 0.85; }
+      .footer__info ul li {
+        width: 50%; }
+        .footer__info ul li a {
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 28px;
+          color: #0E0C0D;
+          opacity: 0.85; }
   .footer__social {
     max-width: 100%; }
     .footer__social ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
       -webkit-box-pack: justify;
       -ms-flex-pack: justify;
       justify-content: space-between;
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
-      .footer__social ul li a {
-        font-weight: 600;
-        font-size: 16px;
-        line-height: 28px;
-        color: #0E0C0D;
-        opacity: 0.7; }
+      .footer__social ul li {
+        width: 50%; }
+        .footer__social ul li a {
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 28px;
+          color: #0E0C0D;
+          opacity: 0.7; }
 
 .welcome {
   width: 100%;

@@ -7,9 +7,11 @@
     width: 100%;
     ul {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       li {
+        width: 50%;
         a {
           font-weight: 700;
           font-size: 16px;
@@ -24,9 +26,11 @@
     max-width: 100%;
     ul {
       display: flex;
+      flex-wrap: wrap;
       justify-content: space-between;
       align-items: center;
       li {
+        width: 50%;
         a {
           font-weight: 600;
           font-size: 16px;
