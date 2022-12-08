@@ -4,17 +4,17 @@
     svg4everybody({});
   });
 
-  new Swiper('.swiper', {
+  new Swiper('.welcome__slider .swiper', {
     speed: 1000,
-    spaceBetween: 100,
+    spaceBetween: 30,
     loop: false,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
     },
     navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      nextEl: '.welcome__slider .swiper-button-next',
+      prevEl: '.welcome__slider .swiper-button-prev',
     },
   });
 

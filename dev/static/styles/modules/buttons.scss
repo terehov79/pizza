@@ -31,3 +31,41 @@
   font-weight: 600;
   font-size: 16px;
 }
+
+.swiper-button-prev, .swiper-button-next {
+@include size(36px);
+display: flex; 
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 50%;
+left: -50px;
+transform: translateY(-50%);
+
+}
+
+.swiper-button-next {
+left: initial;
+right: -50px;
+}
+
+.swiper-pagination {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  &-bullet {
+    @include size(12px);
+    display: block;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 1px solid #000;
+    margin: 0 5px;
+  }
+  
+
+}

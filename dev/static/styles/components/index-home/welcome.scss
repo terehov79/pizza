@@ -2,10 +2,8 @@
   width: 100%;
   padding-top: 25px;
   .swiper {
-    width: 100%;
-    max-height: 409px;
-    border-radius: 20px;
     overflow: hidden;
+    padding-bottom: 20px;
     .swiper-slide {
       width: 100%;
       img {
@@ -16,31 +14,11 @@
         object-position: center center;
       }
     }
-    .swiper-btn{
-      width: 100%;
-      display: flex;
-      position: absolute;
-      .swiper-button-prev, .swiper-button-next {
-        position: relative;
-        cursor: pointer;
-        top: -220px;
-        left: -50px;
-        svg {
-          fill: lightgreen;
-          width: 50px;
-          height: 50px;
-        }
-      }
-      .swiper-button-prev {
-        rotate: (-180deg);
-      }
-      .swiper-button-next {
-        left: 1060px;
-      }
-      .swiper-button-disabled {
-        opacity: 0.3;
-      }
-    }
+  }
+  &__slider {
+    width: 100%;
+    position: relative;
+
   }
 }
 
@@ -120,7 +98,7 @@
     color: #FF2E65;
   }
   .card {
-    @include size(255px, 465px);
+    @include size(100%);
     border-radius: 5px;
     margin: 20px 0; 
     display: flex;
@@ -246,9 +224,13 @@
     p {
       font-weight: 700;
       font-size: 14px;
-      line-height: 22px;
+      line-height: 1.5;
       color: #473E43;
       text-align: center;
+      z-index: 2;
+      @include lg {
+        line-height: 1.35;
+      }
     }
   }
   &__map {

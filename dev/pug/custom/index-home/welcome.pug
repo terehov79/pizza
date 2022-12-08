@@ -1,20 +1,19 @@
 .welcome 
   .container
-    .swiper
-      // Additional required wrapper
-      .swiper-wrapper
-        // Slides
-        - for (var i=0; i<4; i++)
-          .swiper-slide
-            img(src="../static/img/content/slide01.png")
-      //- // If we need pagination
-      //- .swiper-pagination
-      // If we need navigation buttons
-      .swiper-btn
-        .swiper-button-prev
-          +icon("arrow")
-        .swiper-button-next
-          +icon("arrow")
+    .welcome__slider
+      .swiper
+        .swiper-wrapper
+          // Slides
+          - for (var i=0; i<4; i++)
+            .swiper-slide
+              img(src="../static/img/content/slide01.png")
+        .swiper-pagination
+
+        
+      .swiper-button-prev
+        +icon("arrow")
+      .swiper-button-next
+        +icon("arrow")
 
 .new
   .container
@@ -36,7 +35,7 @@
       h3 Паста
       .row
         - for (var i=0; i<4; i++)
-          .col-lg-3.col-md-6
+          .col-xl-3.col-sm-6.mb-4
             .card 
               .__img 
                 img(src="../static/img/content/pizza01.png")
