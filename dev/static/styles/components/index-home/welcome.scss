@@ -18,18 +18,12 @@
   &__slider {
     width: 100%;
     position: relative;
-
   }
 }
 
-// .swiper-pagination {
-//   width: 100%;
-// }
-
 .new {
   width: 100%;
-  padding: 40px 0 10px;
-  
+  padding: 20px 0 0;
   .container {
     position: relative;
     &::after {
@@ -90,8 +84,9 @@
   
 .all {
   width: 100%;
+  
   h3 {
-    padding-top: 20px;
+    padding-top: 30px;
     font-weight: 700;
     font-size: 30px;
     line-height: 37px;
@@ -190,7 +185,7 @@
     padding-bottom: 70px;
   }
   &__block {
-    @include size(100%, 104px);
+    @include size(100%);
     background: #FFFFFF;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.03);
     border-radius: 14px;

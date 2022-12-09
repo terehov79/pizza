@@ -3,13 +3,13 @@
     .welcome__slider
       .swiper
         .swiper-wrapper
-          // Slides
-          - for (var i=0; i<4; i++)
-            .swiper-slide
-              img(src="../static/img/content/slide01.png")
+          .swiper-slide
+            img(src="../static/img/content/slide01.png")
+          .swiper-slide
+            img(src="../static/img/content/slide02.png")
+          .swiper-slide
+            img(src="../static/img/content/slide03.png")
         .swiper-pagination
-
-        
       .swiper-button-prev
         +icon("arrow")
       .swiper-button-next
@@ -28,13 +28,13 @@
               .__info 
                 p Карбонара
                 span от 120 $
-    
+
 .all
   .container
-    - for (var j=0; j<1; j++)
+    - for (var j=0; j<2; j++)
       h3 Паста
       .row
-        - for (var i=0; i<4; i++)
+        - for (var i=0; i<8; i++)
           .col-xl-3.col-sm-6.mb-4
             .card 
               .__img 

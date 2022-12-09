@@ -4,8 +4,17 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include lg {
+    max-width: 95git%;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+  
   &__item {
-    margin-left: 10px;
+    margin-right: 10px;
+    @include lg {
+      margin-right: 30px;
+    }
   }
   &__link {
     font-weight: 600;

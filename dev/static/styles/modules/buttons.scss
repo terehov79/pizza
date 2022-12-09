@@ -33,20 +33,34 @@
 }
 
 .swiper-button-prev, .swiper-button-next {
-@include size(36px);
-display: flex; 
-justify-content: center;
-align-items: center;
-position: absolute;
-top: 50%;
-left: -50px;
-transform: translateY(-50%);
-
+  @include size(36px);
+  display: flex; 
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  transform: translateY(-50%);
+  svg {
+    @include size(30px);
+    transform: rotate(-180deg);
+    fill: #FF2E65;
+    opacity: 0.8;
+  }
 }
 
 .swiper-button-next {
-left: initial;
-right: -50px;
+  left: initial;
+  right: -40px;
+  svg {
+    transform: rotate(0);
+  }
+}
+
+.swiper-button-disabled {
+  svg {
+    opacity: 0.3;
+  }
 }
 
 .swiper-pagination {
@@ -63,9 +77,12 @@ right: -50px;
     display: block;
     border-radius: 50%;
     cursor: pointer;
-    border: 1px solid #000;
+    border: 1px solid gray;
     margin: 0 5px;
   }
-  
+}
 
+.swiper-pagination-bullet-active {
+  background-color: #FF2E65;
+  opacity: 0.8;
 }
