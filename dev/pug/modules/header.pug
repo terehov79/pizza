@@ -1,7 +1,9 @@
-header.header
+header.header--wrap
   .container
-    .row
-      .col-lg-6
+    .header
+      .header__burger
+        +icon("burger")
+      .header__main
         .header__logo
           a(href="#")
             img(src="../static/img/general/logo.png")
@@ -10,20 +12,17 @@ header.header
               span Москва
             p Время доставки
               span.next от 31 мин
-      .col-lg-6
         .header__cta
           button(type='button', name='call').btn_call
             | Заказать звонок
           a(href="tel:+6494461709")
             | 8 800 333-36-62
-      .col-lg-9
-        .header__menu
-          include menu
-      .col-lg-3
+      .header__menu
+        include menu
         .header__login
           a(href="#")
             | Войти
           a(href="#")
             button(type='button', name='cart').btn_cart
               | Корзина
-          
+        
