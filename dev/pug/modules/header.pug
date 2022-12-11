@@ -1,9 +1,11 @@
 header.header--wrap
   .container
     .header
-      .header__burger
-        +icon("burger")
       .header__main
+        .header__burger 
+          span 
+          span 
+          span
         .header__logo
           a(href="#")
             img(src="../static/img/general/logo.png")
@@ -19,10 +21,22 @@ header.header--wrap
             | 8 800 333-36-62
       .header__menu
         include menu
+        .header__social
+          a(href="#") 
+            img(src="../static/img/content/viber.png")
+          a(href="#")
+            img(src="../static/img/content/skype.png")
+          a(href="#")
+            img(src="../static/img/content/messenger.png")
+          a(href="#")
+            img(src="../static/img/content/telegram.png")
+          a(href="#")
+            img(src="../static/img/content/facebook.png")
+          a(href="#")
+            img(src="../static/img/content/vk.png")
         .header__login
           a(href="#")
             | Войти
           a(href="#")
             button(type='button', name='cart').btn_cart
               | Корзина
-        

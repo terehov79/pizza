@@ -18,4 +18,24 @@
     },
   });
 
+  $('.header__burger').on('click', function(){
+    $('.header__menu').toggleClass('active');
+    $('.welcome').toggleClass('shadow');
+    $('.header__burger').toggleClass('active');
+  });
+  
+  $('.welcome').on('click', function(){
+    $('.header__menu').removeClass('active');
+    $('.welcome').removeClass('shadow');
+    $('.header__burger').removeClass('active');
+  });
+
+  $(window).on('scroll', function(){
+    if ($(this).scrollTop() > 10) {
+      $('.header--wrap').addClass('active')
+    } else {
+      $('.header--wrap').removeClass('active')
+    }
+  });
+
 })(jQuery);

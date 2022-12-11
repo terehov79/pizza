@@ -1,20 +1,30 @@
 .nav {
-  width: 76%;
-  min-height: 42px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  @include lg {
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 20px 0;
+  }
   &__item {
     margin-right: 10px;
+    @include lg {
+      padding-bottom: 20px;
+    }
   }
   &__link {
     font-weight: 600;
     font-size: 15px;
     line-height: 18px;
     color: #0E0C0D;
-    &:hover {
-      color: #FF2E65;
-      transition: all 0.5s ease-out;
+    @include lg{
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 1.3;
     }
   }
 }
