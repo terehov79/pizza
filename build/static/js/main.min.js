@@ -11,6 +11,7 @@
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
+      clickable: true
     },
     navigation: {
       nextEl: '.welcome__slider .swiper-button-next',
@@ -18,17 +19,25 @@
     },
   });
 
+  $('body').on('click', function(){
+    $('.header__menu').removeClass('active');
+    $('.wrap-content, .footer').removeClass('blur');
+    $('.header__burger').removeClass('active');
+    $('body').removeClass('overflow');
+  });
+
   $('.header__burger').on('click', function(){
     $('.header__menu').toggleClass('active');
-    $('.welcome').toggleClass('shadow');
+    $('.wrap-content, .footer').toggleClass('blur');
     $('.header__burger').toggleClass('active');
+    $('body').toggleClass('overflow');
   });
   
-  $('.welcome').on('click', function(){
-    $('.header__menu').removeClass('active');
-    $('.welcome').removeClass('shadow');
-    $('.header__burger').removeClass('active');
+  $('.header__burger, .header__menu').on('click', function(event){
+    event.stopPropagation();
   });
+
+  
 
   $(window).on('scroll', function(){
     if ($(this).scrollTop() > 10) {
@@ -37,5 +46,6 @@
       $('.header--wrap').removeClass('active')
     }
   });
+
 
 })(jQuery);

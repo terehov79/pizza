@@ -8,23 +8,34 @@
     justify-content: flex-start;
     align-items: flex-start;
     flex-direction: column;
+    order: 2;
     padding: 20px 0;
   }
   &__item {
     margin-right: 10px;
+    position: relative;
+    &:hover > ul {
+      display: block;
+    }
     @include lg {
       padding-bottom: 20px;
     }
+    ul {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      z-index: 2;
+      background-color: #fff;
+      padding: 10px;
+      border: 1px solid red;
+    }
   }
   &__link {
-    font-weight: 600;
+    font-weight: 600; 
     font-size: 15px;
     line-height: 18px;
     color: #0E0C0D;
-    @include lg{
-      font-weight: 700;
-      font-size: 20px;
-      line-height: 1.3;
-    }
+    
   }
 }

@@ -65,26 +65,20 @@
     justify-content: space-between;
     align-items: center;
     @include lg {
-      @include size(33%, 100%);
+      @include size(380px, calc(100% - 94px));
       padding: 0 50px;
-      margin-top: 94px;
       flex-direction: column;
       justify-content: flex-start;
       position: fixed;
-      top: 0;
-      left: -33%;
-      background-color: white;
+      bottom: 0;
+      left: -100%;
+      background-color: #fff;
       transition: all 0.5s ease-out;
+      overflow-y: auto;
     }
-    @include md {
-      width: 50%;
-      padding: 0 75px;
-      left: -50%;
-    }
-    @include sm {
+    @include xs {
       width: 100%;
       padding: 0 15px;
-      left: -100%;
     }
   }
   &__main {
@@ -164,16 +158,25 @@
     @include lg {
       width: 100%;
       display: flex;
-      justify-content: flex-start;
       flex-wrap: wrap;
+      justify-content: flex-start;
       align-items: center;
+      order: 3;
       padding-bottom: 20px;
       a {
         @include size(50px);
         margin: 0 25px 15px 0;
+        img {
+          @include size(100%);
+        }
       }
-      img {
-        @include size(100%);
+      
+    }
+    @include sm {
+      padding: 0;
+      a {
+        @include size(30px);
+        margin: 0 15px 15px 0;
       }
     }
   }
@@ -185,6 +188,8 @@
     @include lg {
       width: 100%;
       justify-content: flex-start;
+      order: 1;
+      padding-top: 15px;
     }
     a {
       font-weight: 700;
