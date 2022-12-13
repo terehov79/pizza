@@ -37,11 +37,14 @@
     event.stopPropagation();
   });
 
+  $('.nav__item').on('click', function(){
+    $(this).toggleClass('active').children('ul').stop(true).slideToggle(300);
+  })
   
 
   $(window).on('scroll', function(){
     if ($(this).scrollTop() > 10) {
-      $('.header--wrap').addClass('active')
+      $('.header--wrap').addClass('active')``
     } else {
       $('.header--wrap').removeClass('active')
     }
