@@ -24,7 +24,7 @@
     position: relative;
     &:hover > ul {
       @media (min-width: 1200px) {
-        display: block;
+        display: block!important;
       }
     }
     &.has-menu {

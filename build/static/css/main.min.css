@@ -317,7 +317,7 @@ textarea {
     position: relative; }
     @media (min-width: 1200px) {
       .nav__item:hover > ul {
-        display: block; } }
+        display: block !important; } }
     .nav__item.has-menu {
       position: relative; }
       .nav__item.has-menu::after {

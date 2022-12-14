@@ -44,16 +44,19 @@
   
   $(window).on('resize load', function(){
     if ($(window).width() <= 1200) {
-      $('.nav__item').addClass('uni')
+      $('.header').addClass('mobile')
     } else {
-      $('.nav__item').removeClass('uni')
+      $('.header').removeClass('mobile')
     }
   });
 
-  $('.nav__item.uni').on('click', function(){
-    console.log('1111')
-    $(this).toggleClass('active').children('ul').slideToggle(300);
-    // console.log('1111')
+  $('.nav__item').on('click', function(){
+    if ($('.header').hasClass('mobile')) {
+      $(this).toggleClass('active').children('ul').slideToggle(300);
+    } else {
+      $(this).toggleClass('active');
+    }
+    
   });
 
 
