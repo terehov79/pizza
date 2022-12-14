@@ -14,6 +14,7 @@
   &__item.has-menu.active {
     @include lg {
       &::after {
+
         transform: rotate(-90deg);
       }
     }
