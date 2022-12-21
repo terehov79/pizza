@@ -1039,3 +1039,6 @@ textarea {
       border: none;
       display: block;
       border-radius: 14px; }
+    @media (max-width: 576px) {
+      .cargo__map {
+        display: none; } }

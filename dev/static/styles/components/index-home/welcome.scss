@@ -244,5 +244,8 @@
       display: block;
       border-radius: 14px;
     }
+    @include xs {
+      display: none;
+    }
   }
 }
